@@ -1,4 +1,11 @@
-<p>dashboard works!</p>
+<div class="flex bg-slate-100 text-black overflow-y-scroll w-screen h-screen antialiased text-slate-300 selection:bg-blue-600">
+    <div class="flex relative w-screen">
 
-<router-outlet></router-outlet>
+        <app-side-menu></app-side-menu>
 
+        <div class="text-black px-2 mt-2 w-full">
+            <router-outlet></router-outlet>
+        </div>       
+      
+    </div>
+</div>
