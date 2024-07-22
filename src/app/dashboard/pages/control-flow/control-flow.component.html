@@ -15,4 +15,24 @@
         }
     </div>
 
+    <div class="bg-white rounded shadow p-10">
+
+       <h2 class="text-3xl">{{ grade() }}</h2>
+
+       @switch (grade()) {
+          @case ('A') {
+            <p>Arriba de 90</p>
+          }
+    
+          @case ('B') {
+            <p>Entre 80 y 90</p>
+          }
+    
+          @default {
+            <p>Reprobado</p>
+          }
+       }
+    </div>
 </section>
+
+
