@@ -1,4 +1,4 @@
-export interface UserResponse {
+export interface UsersResponse {
     page: number;
     per_page: number;
     total: number;
@@ -18,4 +18,9 @@ export interface User {
     first_name: string;
     last_name: string;
     avatar: string;
+}
+
+export interface UserResponse {
+    data: User;
+    support: Support;
 }
